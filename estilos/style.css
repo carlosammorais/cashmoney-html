@@ -77,6 +77,15 @@ div.grid {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 600px auto;
+  }
+  div.grid {
+    grid-template-columns: repeat(4, 140px);
+  }
+}
+
 div.grid > a  {
   text-decoration: none;
 }
