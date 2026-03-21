@@ -16,15 +16,25 @@
 
 :root {
   --fundo-principal: #F5F5F5;
-  --texto: #222222;
+  --texto: #FFFFFF;
   --texto-inverso: #FFFFFF;
-  --fundo-card: #FFFFFF;
-
-  /* --destaque: #C65A3A;
-  --destaque-inverso: #DFA688; */
+  --fundo-card: #2F4A3F;
+  --fundo-card-inverso: #7E9B86;
 
   --destaque: #2F4A3F;
   --destaque-inverso: #7E9B86;
+
+}
+
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #E0E0E0;
+  --texto-inverso: #7E9B86;
+  --fundo-card: #C65A3A;
+  --fundo-card-inverso: #DFA688;
+
+  --destaque: #C65A3A;
+  --destaque-inverso: #DFA688;
 }
 
 body {
@@ -50,7 +60,7 @@ nav#menu ul {
 
 nav#menu a {
   text-decoration: none;
-  color: var(--texto-inverso);
+  color: var(--texto);
   font-weight: 600;
   padding: 12px 15px;
   border-radius: 5px;
@@ -68,9 +78,11 @@ main {
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  height: 100vh;
 }
 
 div.container {
+  align-self: center;
   grid-column: 2;
 }
 
@@ -83,6 +95,16 @@ div.grid {
 
 div.grid > a  {
   text-decoration: none;
+  background-color: var(--fundo-card);
+  color: var(--texto);
+  border-radius: 8px;
+}
+
+div.grid > a:hover  {
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+  color: var(--destaque);
+  background-color: var(--fundo-card-inverso);
 }
 
 div.grid > a > div  {
@@ -91,8 +113,6 @@ div.grid > a > div  {
   align-items: center;
   display: flex;
 
-  background-color: var(--destaque);
-  color: white;
   border-radius: 10px;
 
   height: 180px;
@@ -102,10 +122,14 @@ div.grid > a > div  {
 
 div.grid > a > div > i,
 div.grid > a > div .material-icons {
-  color: var(--texto-inverso);
+  color: var(--texto);
   font-size: 60px;
   padding-bottom: 5px;
-  /* background-color: red; */
+}
+
+div.grid > a:hover > div > i,
+div.grid > a:hover > div .material-icons {
+  color: var(--destaque);
 }
 
 div.grid > a > div > p  {
@@ -114,7 +138,6 @@ div.grid > a > div > p  {
 
   align-items: center;
   line-height: 1.2;
-  /* background-color: pink; */
 }
 
 @media screen and (max-width: 768px) {
@@ -124,11 +147,14 @@ div.grid > a > div > p  {
   div.grid {
     grid-template-columns: 1fr 1fr; 
   }
+  div.container {
+    align-self: flex-start;
+  }
 
-div.grid > a > div  {
+  div.grid > a > div  {
     height: 100%;
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
