@@ -7,12 +7,19 @@ temaEscuro(temasalvo === 'escuro');
 
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
+  alert(tipo)
   if (tipo == true) {
+    alert('claro 1')
     body.classList.add('escuro');
+    alert('claro 2')
     botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    alert('claro 3')
   } else {
+    alert("escuro 1")
     body.classList.remove('escuro');
+    alert("escuro 2")
     botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    alert("escuro 3")
   }
 }
 
