@@ -23,18 +23,29 @@
 
   --destaque: #2F4A3F;
   --destaque-inverso: #7E9B86;
-
 }
 
 body.escuro {
-  --fundo-principal: #222222;
+  --fundo-principal: #F5F5F5;
+  --texto: #FFFFFF;
+  --texto-inverso: #FFFFFF;
+  --fundo-card: #C65A3A;
+  --fundo-card-inverso: #DFA688;
+
+  --destaque: #C65A3A;
+  --destaque-inverso: #DFA688;
+
+
+
+
+  /* --fundo-principal: #222222;
   --texto: #E0E0E0;
   --texto-inverso: #7E9B86;
   --fundo-card: #C65A3A;
   --fundo-card-inverso: #DFA688;
 
   --destaque: #C65A3A;
-  --destaque-inverso: #DFA688;
+  --destaque-inverso: #DFA688; */
 }
 
 body {
