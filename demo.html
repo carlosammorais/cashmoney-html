@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Cash Money Icons</title>
+<link rel="stylesheet" href="estilos/icons/cash-money-icons.css">
+<style>
+  :root {
+    --bg:#0b1220; --panel:#111827; --line:#1f2937; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0; padding:32px; font-family:Inter,Arial,sans-serif;
+    background:linear-gradient(180deg,#0b1220,#101827); color:var(--text);
+  }
+  .top { max-width:1280px; margin:0 auto 24px; display:flex; justify-content:space-between; gap:16px; align-items:flex-end; flex-wrap:wrap; }
+  h1 { margin:0; font-size:34px; }
+  p { margin:8px 0 0; color:var(--muted); max-width:760px; }
+  .badge { padding:10px 14px; border-radius:14px; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); color:var(--muted); }
+  .toolbar { max-width:1280px; margin:0 auto 22px; display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:10px 14px; display:flex; align-items:center; gap:10px; }
+  .btn i { color:#93c5fd; font-size:18px; }
+  .sidebar { max-width:1280px; margin:0 auto 24px; display:grid; grid-template-columns:220px 1fr; gap:18px; }
+  .sidepanel,.content { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px; }
+  .navitem { display:flex; align-items:center; gap:10px; color:#cbd5e1; padding:10px 12px; border-radius:12px; }
+  .navitem i { color:#93c5fd; font-size:18px; width:18px; }
+  .content small { color:var(--muted); }
+  .grid { max-width:1280px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:18px; }
+  .card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:20px; padding:18px; box-shadow:0 12px 28px rgba(0,0,0,.25); }
+  .title { font-weight:700; margin-bottom:12px; text-transform:capitalize; }
+  .styles { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+  .sample { min-height:90px; border-radius:16px; background:rgba(96,165,250,.10); border:1px solid rgba(96,165,250,.18); display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .sample i { font-size:34px; color:var(--accent); margin-bottom:8px; }
+  .sample span { color:var(--muted); font-size:12px; }
+  .sizes { display:flex; gap:16px; margin-bottom:12px; color:var(--muted); align-items:flex-end; }
+  .sizes > div { display:flex; align-items:flex-end; gap:6px; }
+  .i16 { font-size:16px; color:#cbd5e1; }
+  .i24 { font-size:24px; color:#cbd5e1; }
+  .i32 { font-size:32px; color:#cbd5e1; }
+  .snippet { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12px; color:#dbeafe; background:#0f172a; border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:10px; margin-top:8px; word-break:break-all; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div>
+      <h1>Cash Money Icons</h1>
+      <p>Pacote completo com fonte de ícones, demo e versões solid e outline para ações e módulos de sistema.</p>
+    </div>
+    <div class="badge">Uso: &lt;i class="cmi cmi-save"&gt;&lt;/i&gt; / &lt;i class="cmi cmi-save-o"&gt;&lt;/i&gt;</div>
+  </div>
+
+  <div class="toolbar">
+    <div class="btn"><i class="cmi cmi-save"></i>Salvar</div>
+    <div class="btn"><i class="cmi cmi-delete"></i>Excluir</div>
+    <div class="btn"><i class="cmi cmi-edit"></i>Editar</div>
+    <div class="btn"><i class="cmi cmi-import-o"></i>Importar</div>
+    <div class="btn"><i class="cmi cmi-export"></i>Exportar</div>
+    <div class="btn"><i class="cmi cmi-pix"></i>PIX</div>
+    <div class="btn"><i class="cmi cmi-activate"></i>Ativar</div>
+    <div class="btn"><i class="cmi cmi-deactivate-o"></i>Desativar</div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidepanel">
+      <div class="navitem"><i class="cmi cmi-dashboard"></i>Dashboard</div>
+      <div class="navitem"><i class="cmi cmi-reports-o"></i>Relatórios</div>
+      <div class="navitem"><i class="cmi cmi-finance"></i>Financeiro</div>
+      <div class="navitem"><i class="cmi cmi-entrada"></i>Entradas</div>
+      <div class="navitem"><i class="cmi cmi-saida"></i>Saídas</div>
+      <div class="navitem"><i class="cmi cmi-clientes-o"></i>Clientes</div>
+      <div class="navitem"><i class="cmi cmi-usuarios"></i>Usuários</div>
+      <div class="navitem"><i class="cmi cmi-bank-o"></i>Banco</div>
+      <div class="navitem"><i class="cmi cmi-config"></i>Configurações</div>
+    </div>
+    <div class="content">
+      <strong>Teste de sidebar</strong><br>
+      <small>Área para validar legibilidade em navegação lateral com ícones pequenos.</small>
+    </div>
+  </div>
+
+  <div class="grid">
+    
+    <div class="card">
+      <div class="title">save</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-save"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-save-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-save i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-save i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-save i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-save"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-save-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">delete</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-delete"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-delete-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-delete i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-delete i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-delete i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-delete"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-delete-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">edit</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-edit"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-edit-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-edit i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-edit i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-edit i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-edit"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-edit-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">import</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-import"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-import-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-import i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-import i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-import i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-import"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-import-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">export</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-export"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-export-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-export i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-export i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-export i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-export"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-export-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">pix</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-pix"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-pix-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-pix i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-pix i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-pix i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-pix"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-pix-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">attachment</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-attachment"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-attachment-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-attachment i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-attachment i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-attachment i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-attachment"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-attachment-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">activate</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-activate"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-activate-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-activate i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-activate i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-activate i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-activate"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-activate-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">deactivate</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-deactivate"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-deactivate-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-deactivate i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-deactivate i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-deactivate i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-deactivate"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-deactivate-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">history</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-history"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-history-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-history i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-history i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-history i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-history"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-history-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">dashboard</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-dashboard"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-dashboard-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-dashboard i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-dashboard i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-dashboard i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-dashboard"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-dashboard-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">reports</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-reports"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-reports-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-reports i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-reports i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-reports i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-reports"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-reports-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">finance</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-finance"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-finance-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-finance i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-finance i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-finance i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-finance"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-finance-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">entrada</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-entrada"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-entrada-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-entrada i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-entrada i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-entrada i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-entrada"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-entrada-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">saida</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-saida"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-saida-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-saida i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-saida i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-saida i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-saida"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-saida-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">clientes</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-clientes"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-clientes-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-clientes i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-clientes i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-clientes i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-clientes"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-clientes-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">usuarios</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-usuarios"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-usuarios-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-usuarios i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-usuarios i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-usuarios i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-usuarios"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-usuarios-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">bank</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-bank"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-bank-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-bank i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-bank i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-bank i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-bank"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-bank-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+    <div class="card">
+      <div class="title">config</div>
+      <div class="styles">
+        <div class="sample"><i class="cmi cmi-config"></i><span>solid</span></div>
+        <div class="sample"><i class="cmi cmi-config-o"></i><span>outline</span></div>
+      </div>
+      <div class="sizes">
+        <div><i class="cmi cmi-config i16"></i><small>16</small></div>
+        <div><i class="cmi cmi-config i24"></i><small>24</small></div>
+        <div><i class="cmi cmi-config i32"></i><small>32</small></div>
+      </div>
+      <div class="snippet">&lt;i class="cmi cmi-config"&gt;&lt;/i&gt;</div>
+      <div class="snippet">&lt;i class="cmi cmi-config-o"&gt;&lt;/i&gt;</div>
+    </div>
+    
+  </div>
+</body>
+</html>
