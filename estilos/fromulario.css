@@ -72,6 +72,7 @@ button[type="submit"] {
 /* Responsividade - Telas menores (Mobile) */
 @media (max-width: 480px) {
     dialog {
+        margin-top: 60px;
         width: 85% !important;
         padding: 15px;
     }
