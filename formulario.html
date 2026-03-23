@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal Externo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilização básica da tag dialog */
+        dialog { border: none; border-radius: 8px; padding: 20px; }
+        dialog::backdrop { background-color: rgba(0, 0, 0, 0.5); }
+    </style>
+    <link rel="stylesheet" href="estilos/fromulario.css">
+</head>
+<body>
+
+    <button id="btnAbrir">Abrir Modal</button>
+
+    <!-- Tag dialog HTML5 nativa -->
+    <dialog id="meuModal"></dialog>
+
+    <script>
+        const btnAbrir = document.getElementById('btnAbrir');
+        const modal = document.getElementById('meuModal');
+
+        btnAbrir.addEventListener('click', () => {
+            // Usa Fetch API para carregar o arquivo externo
+            fetch('formulario_modal.html')
+                .then(response => response.text())
+                .then(data => {
+                    modal.innerHTML = data; // Insere o HTML dentro do modal
+                    modal.showModal(); // Abre o modal
+                })
+                .catch(error => console.error('Erro ao carregar modal:', error));
+        });
+    </script>
+</body>
+</html>

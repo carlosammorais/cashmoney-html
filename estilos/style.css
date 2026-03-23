@@ -26,18 +26,6 @@
 }
 
 body.escuro {
-  /* --fundo-principal: #F5F5F5;
-  --texto: #FFFFFF;
-  --texto-inverso: #FFFFFF;
-  --fundo-card: #C65A3A;
-  --fundo-card-inverso: #DFA688;
-
-  --destaque: #C65A3A;
-  --destaque-inverso: #DFA688; */
-
-
-
-
   --fundo-principal: #222222;
   --texto: #E0E0E0;
   --texto-inverso: #7E9B86;
@@ -61,6 +49,9 @@ header {
   padding: 10px;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 nav#menu ul {
@@ -129,6 +120,7 @@ div.grid > a > div  {
   height: 180px;
   width: 180px;
   text-align: center;
+  padding: 10px 10px;
 }
 
 div.grid > a > div > i,
@@ -166,6 +158,10 @@ div.grid > a > div > p  {
     height: 100%;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+  }
+
+  div.grid > a > div > p {
+    font-size: 14px;
   }
 }
+

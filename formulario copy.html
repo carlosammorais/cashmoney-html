@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em Diálogo Responsivo</title>
+    <link rel="stylesheet" href="estilos/fromulario.css">
+</head>
+<body>
+
+    <button id="btnAbrir">Abrir Formulário</button>
+
+        <dialog id="modalForm">
+            <div class="modal-content">
+                <h2>Entre em Contato</h2>
+                <form class="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem..."></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="btnFechar">Fechar</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <script>
+        const modal = document.getElementById('modalForm');
+        const btnAbrir = document.getElementById('btnAbrir');
+        const btnFechar = document.getElementById('btnFechar');
+
+        btnAbrir.addEventListener('click', () => modal.showModal());
+        btnFechar.addEventListener('click', () => modal.close());
+    </script>
+</body>
+</html>

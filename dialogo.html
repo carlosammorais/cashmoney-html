@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Diálogo Flexbox</title>
+    <link rel="stylesheet" href="estilos/confirm_dialog.css">
+</head>
+<body>
+
+    <!-- Overlay (fundo escurecido) -->
+    <div class="dialog-overlay">
+        <!-- Caixa de Diálogo (Container Flex) -->
+        <div class="dialog-box">
+            <header class="dialog-header">
+                <h2>Confirmar Ação</h2>
+                <button class="close-btn">&times;</button>
+            </header>
+            <div class="dialog-content">
+                <p>Tem certeza que deseja excluir este item? Esta ação não pode ser desfeita.</p>
+            </div>
+            <footer class="dialog-footer">
+                <button class="btn btn-cancel">Cancelar</button>
+                <button class="btn btn-confirm">Confirmar</button>
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>

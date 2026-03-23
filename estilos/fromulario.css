@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+
+/* Estilização do Diálogo (Modal) */
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    width: 90%;
+    max-width: 400px; /* Largura máxima para telas grandes */
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+}
+
+/* Formulário Flexbox */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Itens um embaixo do outro */
+    gap: 15px; /* Espaçamento entre campos */
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: -10px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%; /* Ocupa todo o espaço do container */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    flex-grow: 1;
+}
+
+#btnFechar {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsividade - Telas menores (Mobile) */
+@media (max-width: 480px) {
+    dialog {
+        width: 85% !important;
+        padding: 15px;
+    }
+
+}

@@ -1,0 +1,102 @@
+/* Reseta estilos básicos e usa border-box */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* 1. Centralizando com Flexbox (Overlay) */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 20px; /* Margem de segurança para mobile */
+}
+
+/* 2. Estilizando a Caixa de Diálogo */
+.dialog-box {
+    background-color: white;
+    width: 100%;
+    max-width: 500px; /* Largura máxima em desktop */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Organiza header, content, footer verticalmente */
+    overflow: hidden;
+}
+
+/* 3. Header e Footer com Flexbox */
+.dialog-header, .dialog-footer {
+    padding: 15px 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog-header h2 {
+    font-size: 1.2rem;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* 4. Conteúdo */
+.dialog-content {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* 5. Footer (Botões alinhados à direita) */
+.dialog-footer {
+    background-color: white;
+    justify-content: flex-end; /* Alinha botões à direita */
+    gap: 10px; /* Espaço entre botões */
+    border-top: 1px solid #eee;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-cancel {
+    background-color: #ddd;
+}
+
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+}
+
+/* 6. Responsividade: Media Query para telas menores */
+@media (max-width: 480px) {
+    .dialog-box {
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .dialog-footer {
+        flex-direction: column; /* Botões um embaixo do outro no celular */
+    }
+    
+    .btn {
+        width: 100%; /* Botões ocupam largura total */
+    }
+}
